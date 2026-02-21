@@ -26,3 +26,31 @@ Happy modeling!
 [0m21:49:26.420068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a35bdc9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a35c1a690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a35dffbd0>]}
 [0m21:49:26.420273 [debug] [MainThread]: Flushing usage events
 [0m21:49:26.838221 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:57:26.025040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e37e75b4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e3800e56d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e37d68bd90>]}
+
+
+============================== 15:57:26.063493 | 03963d8b-f62e-473d-8de4-fc850a8b89da ==============================
+[0m15:57:26.063493 [info ] [MainThread]: Running with dbt=1.11.6
+[0m15:57:26.063911 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'empty': 'None', 'warn_error': 'None', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'use_colors': 'True', 'quiet': 'False', 'log_format': 'default', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init --skip-profile-setup airbnb', 'introspect': 'True', 'static_parser': 'True', 'debug': 'False', 'write_json': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'partial_parse': 'True', 'profiles_dir': '/home/akira/projects/snowflake-dbt'}
+[0m15:57:26.125447 [info ] [MainThread]: A project called airbnb already exists here.
+[0m15:57:26.126256 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.13692364, "process_in_blocks": "47904", "process_kernel_time": 0.502542, "process_mem_max_rss": "127140", "process_out_blocks": "33728", "process_user_time": 1.555111}
+[0m15:57:26.126665 [debug] [MainThread]: Command `dbt init` succeeded at 15:57:26.126573 after 0.14 seconds
+[0m15:57:26.126954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e37d3d4180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e37d3d3890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e37d7b3790>]}
+[0m15:57:26.127264 [debug] [MainThread]: Flushing usage events
+[0m15:57:26.538784 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:48:09.613131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7892b32cc590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7892b4ca4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7892b2397b10>]}
+
+
+============================== 18:48:09.615606 | 4399190d-043c-4ac7-89ef-8d94c4106c85 ==============================
+[0m18:48:09.615606 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:48:09.615969 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'no_print': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/home/akira/.dbt', 'quiet': 'False', 'use_colors': 'True', 'printer_width': '80', 'fail_fast': 'False', 'target_path': 'None', 'empty': 'False', 'static_parser': 'True'}
+[0m18:48:09.616284 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/akira/projects/snowflake-dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:48:09.616813 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.042691197, "process_in_blocks": "0", "process_kernel_time": 0.254624, "process_mem_max_rss": "103552", "process_out_blocks": "1936", "process_user_time": 0.791722}
+[0m18:48:09.617070 [debug] [MainThread]: Command `dbt run` failed at 18:48:09.617012 after 0.04 seconds
+[0m18:48:09.617264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7892b246bce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7892b23ed250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7892b2248490>]}
+[0m18:48:09.617485 [debug] [MainThread]: Flushing usage events
+[0m18:48:10.016783 [debug] [MainThread]: An error was encountered while trying to flush usage events
