@@ -11,3 +11,8 @@ dependencies = [
     "sqlfluff>=4.0.4",
     "shandy-sqlfmt[jinjafmt]>=0.29.0",
 ]
+
+[tool.sqlfmt]
+line_length = 120
+exclude = [".venv/**/*.sql"]
+no_jinjafmt = true
