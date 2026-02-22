@@ -9,4 +9,5 @@ dependencies = [
     "dagster-dbt>=0.28.0",
     "dagster-webserver>=1.12.0",
     "sqlfluff>=4.0.4",
+    "shandy-sqlfmt[jinjafmt]>=0.29.0",
 ]
