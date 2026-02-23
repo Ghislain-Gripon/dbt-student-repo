@@ -3,13 +3,13 @@ name = "dbt-bootcamp"
 version = "1.11.0"
 requires-python = ">=3.10,<3.14"
 dependencies = [
-    "dbt-core>=1.11.6",
     "dbt-snowflake>=1.11.2",
     "dbt-autofix>=0.18.0",
     "dagster-dbt>=0.28.0",
     "dagster-webserver>=1.12.0",
     "sqlfluff>=4.0.4",
     "shandy-sqlfmt[jinjafmt]>=0.29.0",
+    "dbt-core>=1.11.6",
 ]
 
 [tool.sqlfmt]
