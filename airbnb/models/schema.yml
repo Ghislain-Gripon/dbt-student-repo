@@ -35,12 +35,6 @@ models:
         data_tests:
           - positive_values
 
-  - name: seed_full_moon_dates
-    columns:
-      - name: full_moon_date
-        data_tests:
-          - unique
-          - not_null
   - name: dim_hosts_cleansed
     config:
       contract:
@@ -56,3 +50,11 @@ models:
         data_type: timestamp
       - name: created_at
         data_type: timestamp
+
+seeds:
+  - name: seed_full_moon_dates
+    columns:
+      - name: full_moon_date
+        data_tests:
+          - unique
+          - not_null
