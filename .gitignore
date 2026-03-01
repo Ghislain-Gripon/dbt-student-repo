@@ -1,5 +1,5 @@
 profiles.yml
 rsa
 .cursor
-logs
+logs/
 .vscode

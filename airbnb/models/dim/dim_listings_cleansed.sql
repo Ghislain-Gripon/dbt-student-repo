@@ -13,5 +13,6 @@ select
     replace(price_str, '$')::number(10, 2) as price,
     created_at,
     updated_at,
-    case when minimum_nights = 0 then 1 else minimum_nights end as minimum_nights
+    case when minimum_nights = 0 then 1 else minimum_nights end
+        as minimum_nights
 from src_listings

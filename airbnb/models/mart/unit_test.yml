@@ -1,0 +1,20 @@
+unit_tests:
+  - name: unittest_fullmoon_matcher
+    description: "Check fct_reviews.review_date is paired with previous day seed_full_moon_dates.full_moon_dates"
+    model: mart_fullmoon_reviews
+    given:
+      - input: ref('fct_reviews')
+        rows:
+          - { review_date: 2009-05-10 }
+          - { review_date: 2009-06-08 }
+          - { review_date: 2009-02-01 }
+      - input: ref('seed_full_moon_dates')
+        rows:
+          - { full_moon_date: 2009-05-09 }
+          - { full_moon_date: 2009-06-06 }
+          - { full_moon_date: 2009-01-31 }
+    expect:
+      rows:
+        - { is_full_moon: full moon, review_date: 2009-05-10 }
+        - { is_full_moon: not full moon, review_date: 2009-06-08 }
+        - { is_full_moon: full moon, review_date: 2009-02-01 }

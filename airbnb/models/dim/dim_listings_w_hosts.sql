@@ -1,4 +1,7 @@
-with l as (select * from {{ ref('dim_listings_cleansed') }}), h as (select * from {{ ref('dim_hosts_cleansed') }})
+with l as (select * from {{ ref('dim_listings_cleansed') }}),
+
+h as (select * from {{ ref('dim_hosts_cleansed') }})
+
 select
     l.listing_id,
     l.listing_name,
